@@ -1,0 +1,85 @@
+body{
+  background-color: white; 
+
+} 
+header h1{
+text-align: center;
+text-decoration-color: black;
+font-family: Arial;
+background-color: aqua;
+}
+.navbar{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  color: black;
+}
+.navbar li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+.navbar li{
+  float: left; 
+  border-right: 1px ;
+}
+.navbar li :last-child{
+  border-right: none;
+}
+.text{
+  text-align: center;
+  font-family: Arial;
+  margin: 4px;
+  padding: 4px;
+  color: black;
+
+}
+.button{
+  color: aquamarine;
+  text-decoration: 4px solid dotted  blue;
+  display: flex;
+  background-color: white;
+  border-radius: 0%;
+  justify-content: center;
+  text-align: center;
+
+}
+@media(max-width: 400px){
+  .button{
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+.carousel {
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+  animation: fadeInOut 5s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+} 
+body.estilo-alternativo {
+  background-color: #333;
+  color: aqua;
+}
+
+
